@@ -1,16 +1,8 @@
-import { Link } from "react-router-dom";
+import RouterComponent from './router';
+import './styles.scss'
 
-function App() {
-  return (
-    <>
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/logement">Logement</Link></li>
-        </ul>
-      </nav>
-    </>
-  );
-}
+const App = () => (
+  <RouterComponent className="header"></RouterComponent>
+);
 
 export default App;
