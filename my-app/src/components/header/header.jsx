@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Logo from "./images/LOGO.png";
+import Logo from "../../images/LOGO.png";
 
-const RouterComponent = () => {
+const Header = () => {
   return (
     <div>
       <nav className="header">
@@ -18,7 +18,8 @@ const RouterComponent = () => {
         </div>
       </nav>
     </div>
+    
   );
 };
 
-export default RouterComponent;
+export default Header;

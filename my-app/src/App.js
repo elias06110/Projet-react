@@ -1,8 +1,9 @@
-import RouterComponent from './router';
-
+import Home from "./pages/home"
 
 const App = () => (
-  <RouterComponent ></RouterComponent>
+  <div>
+  <Home></Home>
+  </div>
 );
 
 export default App;
