@@ -1,16 +1,17 @@
-import React from 'react'
-import IMG from "../../images/IMGpng.png";
+import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
+export default function Banner() {
+  const [aboutPage, setAboutPage] = useState(false);
+  const location = useLocation();
 
-const Banner = () =>{
+  useEffect(() => {
+    setAboutPage(location.pathname === '/about');
+  }, [location.pathname]);
+
   return (
-    <div className='banner'>
-        <img src={IMG} className='img-banner' alt='banner'></img>
-        <div className='banner-text'>
-        <h1>Chez vous partout et ailleurs</h1>
-        </div>
-    </div>
+    <section className={aboutPage ? 'banner_about' : 'banner'}>
+      {!aboutPage && <p>Chez vous, partout et ailleurs</p>}
+    </section>
   );
 }
-
-export default Banner
