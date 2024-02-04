@@ -9,8 +9,8 @@ const Error =()=>{
         <div>
             <p className="error">404</p>
             <div className="error_text">
-            <p>Oups! La page que vous demandez n'existe pas.</p>
-            <Link to="/">Retourner sur la page d'Accueil</Link>
+            <p className="oups">Oups! La page que vous demandez n'existe pas.</p>
+            <Link className="error_link" to="/">Retourner sur la page d'Accueil</Link>
             </div>
         </div>
         <Footer></Footer>

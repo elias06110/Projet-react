@@ -1,18 +1,24 @@
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  font-family: "Montserrat";
   padding-top: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
 .red {
   color: #ff6060;
+}
+
+.kasa{
+  @media screen and (max-width: 900px) {
+    width:80%;
+  }
+  @media screen and (max-width: 450px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 370px) {
+    width: 80px;
+  }
 }
 
 .header {
@@ -24,6 +30,9 @@ code {
   max-width: 80%;
   margin: 0 auto;
   padding-bottom: 40px;
+  @media screen and (max-width: 900px) {
+    padding-bottom: 0px;
+  }
   &_list {
     color: #ff6060;
     display: flex;
@@ -37,10 +46,14 @@ code {
     text-decoration: none;
     color: #ff6060;
     cursor: pointer;
-  }
-  &_links:hover {
-    text-decoration: underline;
-  }
+    @media screen and (max-width: 900px) {
+      font-size: clamp(20px, 3vw, 48px);
+    }
+ }
+}
+
+.active{
+  text-decoration: underline;
 }
 
 .banner {
@@ -57,9 +70,14 @@ code {
   height: 223px;
   max-width: 83%;
   margin: 0 auto;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 900px) {
+    margin: 20px auto;
+    justify-content: flex-start;
+  }
+  @media screen and (max-width: 500px) {
     margin: 20px auto;
     height: 120px;
+    justify-content: flex-start;
   }
   &_about {
     position: relative;
@@ -78,7 +96,11 @@ code {
   }
   p {
     font-size: clamp(20px, 4vw, 48px);
-    font-weight: 500;
+    @media screen and (max-width: 900px) {
+      margin-left: 5%;
+      width: 55%;
+      font-size: clamp(20px, 5vw, 48px);
+    }
   }
 }
 
@@ -92,6 +114,11 @@ code {
   height: auto;
   border-radius: 20px;
   margin-top: 50px;
+  @media screen and (max-width: 900px) {
+    background-color: white;
+    width:100%;
+    
+  }
   &_appartements {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -103,6 +130,8 @@ code {
     @media screen and (max-width: 900px) {
       display: flex;
       flex-direction: column;
+      width: 83%;
+      margin:0;
     }
   }
 }
@@ -145,6 +174,7 @@ code {
     will-change: transform;
   }
   h3 {
+    width: 50%;
     z-index: 20;
     position: absolute;
     bottom: 20px;
@@ -187,6 +217,11 @@ code {
   color: #ff6060;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  bottom: 80px;
+}
+&_link{
+  color:#ff6060;
 }}
 
 
@@ -405,4 +440,11 @@ code {
       width: 100%;
     }
   }
+}
+
+.oups{
+  font-size:30px;
+  position: relative;
+  bottom: 100px;
+
 }
