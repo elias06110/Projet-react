@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/elias06110/Projet-react/static/css/main.efe45a5c.css",
+    "main.js": "/elias06110/Projet-react/static/js/main.0b906a55.js",
+    "static/media/IMG2.png": "/elias06110/Projet-react/static/media/IMG2.ef5dc982743b7363d7bd.png",
+    "static/media/IMGpng.png": "/elias06110/Projet-react/static/media/IMGpng.1029510ac4f34eb21921.png",
+    "index.html": "/elias06110/Projet-react/index.html",
+    "main.efe45a5c.css.map": "/elias06110/Projet-react/static/css/main.efe45a5c.css.map",
+    "main.0b906a55.js.map": "/elias06110/Projet-react/static/js/main.0b906a55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.efe45a5c.css",
+    "static/js/main.0b906a55.js"
+  ]
+}
