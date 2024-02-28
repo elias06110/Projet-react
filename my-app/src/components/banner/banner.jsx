@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 export default function Banner() {
   const [aboutPage, setAboutPage] = useState(false);
   const location = useLocation();
-
+//
   useEffect(() => {
     setAboutPage(location.pathname === '/about');
   }, [location.pathname]);
